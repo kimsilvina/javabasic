@@ -1,0 +1,17 @@
+
+[1]
+	a1= input2.nextInt();
+	b1= input2.nextInt();
+	int big1 = (a1>b1?a1:b1); 
+	int small1 = (a1>b1?b1:a1); 
+	c1= input2.nextInt();
+
+	Answer = (c1>big1?big1:(c1<small1)?small1:c1);
+
+
+[2]
+double result = ( (a-b)*(a-c) <= 0 ) ? a : ( (b-a)*(b-c) <=0 ) ? b : c;
+System.out.println( (int) result );
+
+
+
