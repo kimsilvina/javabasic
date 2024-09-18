@@ -10,10 +10,15 @@ public class SelectEmp {
 	public static void main(String[] args) {
 		
 		// 0. 필요한 변수
+		
+		//-----------------------
+		// ############ Mysql 연동 정보
+		// 여기 변수를 상수로 만들자
 		String driver 	= "com.mysql.cj.jdbc.Driver";
 		String url		= "jdbc:mysql://localhost:3306/basic";
 		String user		= "scott";
 		String pass		= "tiger";
+		//------------------------
 	
 		try {
 			// 1. 드라이버 로딩
