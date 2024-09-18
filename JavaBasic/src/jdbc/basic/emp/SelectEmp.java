@@ -18,13 +18,15 @@ public class SelectEmp {
 		try {
 			// 1. 드라이버 로딩
 			Class.forName(driver);
-			
-			// 2. 연결객체 얻어오기 
-			Connection con = DriverManager.getConnection(url, user, pass);
-			
-			// 3. sql 문장
+
+			//******************************************
+			// 2. sql 문장
 			String sql = "SELECT ename, job, sal FROM emp";
-			
+		
+			// 3. 연결객체 얻어오기 
+			Connection con = DriverManager.getConnection(url, user, pass);
+			//******************************************
+	
 			// 4. sql 전송객체 얻어오기
 			Statement stmt = con.createStatement();
 			
